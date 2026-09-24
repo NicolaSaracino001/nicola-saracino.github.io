@@ -102,6 +102,46 @@
         .hidden {
             display: none;
         }
+        .repo-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+        .repo-link:hover {
+            color: var(--accent-hover);
+        }
+        /* Sezione Contatti */
+        .contact-links {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+        .contact-links h2 {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .contact-links a:hover {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
         /* Animazioni base */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
@@ -130,46 +170,51 @@
 
         <div class="grid" id="project-grid">
             
-            <!-- Progetto 1 -->
             <div class="card bio">
                 <h3>Single-Cell RNA Sequencing</h3>
                 <div class="tag">R</div> <div class="tag">gprofiler2</div>
                 <p>Analisi trascrittomica single-cell su campioni di tessuto (milza, pelle e cervello). Calcolo delle metriche di espressione genica, cluster heatmaps e annotazioni di arricchimento funzionale.</p>
+                <a href="INSERISCI_LINK_REPO_QUI" target="_blank" class="repo-link">Vedi su GitHub ➔</a>
             </div>
 
-            <!-- Progetto 2 -->
             <div class="card dev">
                 <h3>FoodLoop</h3>
                 <div class="tag">Python</div> <div class="tag">Flask</div> <div class="tag">SQLite</div>
                 <p>Sistema di gestione inventario sostenibile con backend robusto. Include uno strumento di generazione ricette guidato dall'AI basato sugli ingredienti disponibili.</p>
+                <a href="INSERISCI_LINK_REPO_QUI" target="_blank" class="repo-link">Vedi su GitHub ➔</a>
             </div>
 
-            <!-- Progetto 3 -->
             <div class="card bio dev">
                 <h3>PPI Networks Analysis</h3>
                 <div class="tag">Python</div> <div class="tag">NetworkX</div> <div class="tag">STRING API</div>
                 <p>Pipeline a riga di comando per costruire grafi di interazione proteina-proteina, calcolare le metriche di centralità e identificare le proteine hub principali.</p>
+                <a href="INSERISCI_LINK_REPO_QUI" target="_blank" class="repo-link">Vedi su GitHub ➔</a>
             </div>
 
-            <!-- Progetto 4 -->
             <div class="card dev">
                 <h3>Aion Event Manager</h3>
                 <div class="tag">Web Development</div> <div class="tag">Community Tech</div>
                 <p>Applicazione per la gestione di eventi e ticketing sviluppata per supportare il coordinamento delle community e la promozione per associazioni non profit.</p>
+                <a href="INSERISCI_LINK_REPO_QUI" target="_blank" class="repo-link">Vedi su GitHub ➔</a>
             </div>
 
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="contact-links">
+            <h2>📬 Mettiamoci in contatto</h2>
+            <a href="mailto:nicola.saracino098@gmail.com">nicola.saracino098@gmail.com</a>
+            <a href="https://nicola-portfolio.lovable.app" target="_blank">Portfolio Completo</a>
         </div>
     </div>
 
     <!-- Script JavaScript per rendere la pagina interattiva -->
     <script>
         function filterProjects(category) {
-            // Aggiorna lo stile dei bottoni
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
 
-            // Filtra le card
             const cards = document.querySelectorAll('.card');
             cards.forEach(card => {
                 if (category === 'all') {
