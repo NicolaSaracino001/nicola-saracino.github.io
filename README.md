@@ -4,7 +4,7 @@
 
 Welcome to my interactive GitHub Pages portfolio! This repository hosts a dynamic, filterable showcase of my projects bridging computational biology, bioinformatics, and full-stack software development.
 
-✨ **[Clicca qui per visitare il sito live!](INSERISCI_QUI_IL_TUO_LINK_GITHUB_PAGES)**
+✨ **[Clicca qui per visitare il sito live!](https://nicolasaracino001.github.io/nicola-saracino.github.io/)**
 
 ## 🛠️ Tecnologie utilizzate
 - **HTML5 & CSS3** per la struttura e il design (tema scuro personalizzato).
